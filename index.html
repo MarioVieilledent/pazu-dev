@@ -1,13 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mario Vieilledent</title>
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      /* Headings */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+      h3 {
+        font-size: 1.75em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+      h5 {
+        font-size: 1.25em;
+      }
+      h6 {
+        font-size: 1em;
+      }
+
+      /* Paragraphs and Text Elements */
+      p {
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: inline-block;
+        margin: 5px 0;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      /* Tables */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        font-weight: bold;
+        background-color: #f4f4f4;
+      }
+
+      /* Forms */
+      input,
+      select,
+      textarea,
+      button {
+        font-family: inherit;
+        font-size: 1em;
+        padding: 8px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      /* Block Elements */
+      section {
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border-top: 1px solid #333;
+      }
+
+      blockquote {
+        margin: 15px 0;
+        padding: 10px 20px;
+        border-left: 5px solid #ddd;
+        background-color: #f9f9f9;
+      }
+
+      /* Alignment */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header>
+      <h1>Mario Vieilledent</h1>
+      <p>French front-end developer working in Trondheim, Norway.</p>
+    </header>
+
+    <section>
+      <h2>About me</h2>
+      <p>
+        Hey I'm Mario, 25 years old, French, I'm from in Rodez (south of
+        France).
+      </p>
+      <p>I'm working full time as frontend developer in Trondheim.</p>
+      <blockquote>
+        Y'a quoi à manger ce soir ?<br />— Mario Vieilledent
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mario-vieilledent/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/MarioVieilledent" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I like</h2>
+      <p>Here is a pick of activities that I enjoy</p>
+      <ul>
+        <li>
+          <strong>Nature</strong>, as it's the most based thing we have down
+          here
+        </li>
+        <li>
+          <strong>Computer Science</strong> and all nerdy stuff such as coding,
+          programming languages, and other cookie clicker integer maxing
+        </li>
+        <li><strong>Sports</strong> mainly swimming and hiking</li>
+        <li><strong>Classical music</strong> I play piano and viola</li>
+        <li><strong>Languages</strong> their history and writing systems</li>
+        <li>
+          <strong>Travel</strong> I love traveling, I've visited almost all
+          countries in Europe and can't stop exploring the world and get to know
+          people living there.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key numbers</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <td>Date of birth</td>
+            <td>First June 1999</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Well this part doesn't work as it is a template generated by ChatGPT
+      </p>
+
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="question">Your Question:</label>
+        <textarea id="question" name="question" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <hr />
+      <p>&copy; 2024 Pazu corp. All rights reserved.</p>
+    </footer>
+
+    <script>
+      console.log("Salut");
+    </script>
   </body>
 </html>
